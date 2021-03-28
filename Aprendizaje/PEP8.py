@@ -1,1 +1,0 @@
-# link: https://dev.to/viktorvillalobos/que-es-el-pep-8-y-porque-deberia-implementarlo-54bh
