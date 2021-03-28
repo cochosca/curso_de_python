@@ -1,3 +1,2 @@
-a=[1,2,3]
-for i in range(len(a)):
-    print(a[i])
+for i in range(9):
+    print(i,end="-")
