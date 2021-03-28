@@ -1,5 +1,5 @@
 #----------------
-#WHILE
+# WHILE
 #---------------
 # El bucle while ejecuta un CODIGO cuando la condicion establecida sea verdadera
 #IMPORTANTE: cualquier valor entero que no sea cero es verdadero; CERO ES FALSO
@@ -22,13 +22,57 @@ while z < 11:
 else:
     print('termino el ciclo')
 #---------------------
-#CICLO FOR
+# CICLO FOR
 #---------------------
-# ciclo for realiza una iteracion(Iteración significa repetir varias veces un proceso con la intención de alcanzar una meta deseada, objetivo o resultado)
-# ITERA sobre los ítems de CUALQUIER SECUENCIA (una lista o una cadena de texto)en el orden que aparecen en la secuencia.
+# ciclo for realiza una iteracion (Iteración significa repetir varias veces un proceso con la intención de alcanzar una meta deseada, objetivo o resultado)
+# ITERA sobre los ítems de CUALQUIER SECUENCIA (lista, cadena de texto, rango)en el orden que aparecen en la secuencia, en donde, a cada itearcion se SE EJECUTA UN CODIGO.
 words = ['cat', 'window', 'defenestrate']
 for w in words:
     print(w, len(w))  # Imprime el primer elemento de la lista y cantidad de elementos de la cadena de caracteres
 #>>> cat 3
 #>>> window 6
 #>>> defenestrate 12
+# tambien podemos agregar al final del ciclo for el comando else
+y= "comida"
+for n in y:
+    print(n)
+else:
+    print('fin del ciclo')
+#----
+# RANGE
+#----
+# la funcion integrada range(), hace que el ciclo for ITERE sobre un una secuencia de numeros, que genera una progresion aritmetica
+for i in range(9):
+    print(i,end="-")    # la funcion end="-" sirve para eviar los saltos de linea y egregamos un simbolo a ese espacio
+#>>> 0-1-2-3-4-5-6-7-8-
+
+
+#----
+# BREAK
+#-----
+# este comando se utiliza para romber el ciclo for
+#por ejemplo si a la cadena de caracteres 'caca' queremos que solo imprima la letra a y una sola vez, necesitamos el comando break
+for l in 'caca':
+    if l == a:
+        print(l)
+# >>> a
+# >>> a
+# como el ciclo for encontro 2 "a" entonces imprimio 2 veces pero nosotros queremos que sea una sola vez
+#Entonces usamos break para que corte el ciclo en la primera vez que el ciclo imprima "a"
+for l in 'caca':
+    if l == a:
+        print(l)
+        break
+# >>> a
+# inclusive si agregamos else al final del ciclo o cualquier otro codifo debajo del BREAK no se ejecuta ese comando porque break rompe la cadena, es decir todo lo que este despues de break no se ejecuta.
+for nu in ' roberta tototo':
+    if nu == 'o':
+        print(nu)
+        break
+        print('caca de vaca')
+        uno = 5
+        while uno > 0:
+            print(uno)
+            uno-=1
+# >>> o
+
