@@ -32,7 +32,7 @@ for w in words:
 #>>> cat 3
 #>>> window 6
 #>>> defenestrate 12
-# tambien podemos agregar al final del ciclo for el comando else
+# tambien podemos agregar al final del ciclo for el comando ---ELSE---
 y= "comida"
 for n in y:
     print(n)
@@ -45,22 +45,21 @@ else:
 for i in range(9):
     print(i,end="-")    # la funcion end="-" sirve para eviar los saltos de linea y egregamos un simbolo a ese espacio
 #>>> 0-1-2-3-4-5-6-7-8-
-
-
 #----
 # BREAK
 #-----
-# este comando se utiliza para romber el ciclo for
+# este comando se utiliza para romber el ciclo for, creo que se utiliza para evitar que se realize toda la iteracion, por ejemplo cuando buscas algo y encontras queres que pare la iteracion.
 #por ejemplo si a la cadena de caracteres 'caca' queremos que solo imprima la letra a y una sola vez, necesitamos el comando break
+
 for l in 'caca':
-    if l == a:
+    if l == 'a':
         print(l)
 # >>> a
 # >>> a
 # como el ciclo for encontro 2 "a" entonces imprimio 2 veces pero nosotros queremos que sea una sola vez
 #Entonces usamos break para que corte el ciclo en la primera vez que el ciclo imprima "a"
 for l in 'caca':
-    if l == a:
+    if l == 'a':
         print(l)
         break
 # >>> a
@@ -74,5 +73,27 @@ for nu in ' roberta tototo':
         while uno > 0:
             print(uno)
             uno-=1
+else:
+    print('moco')
 # >>> o
-
+#----------------
+# CONTINUE
+#----------------
+# esta funcion hace que se pase al siguiente ciclo cuando se cumple una condicion, todo el codigo que este debajo de continue no se ejecutara sino se saltara al siguiente ciclo
+# A diferncia de la funcion break, esta continua con el siguiente ciclo cuando se cumple una condicion y break rompe la iteracion por completo
+for i in range(10):
+    if i%2 == 0:
+        continue #si el residuio de la division es igual que cero se salta a la siguiente iteracion
+    print(i,end="-")
+# >>> 1-3-5-7-9
+#---------------
+# PASS
+#---------------
+#es como una marca de lugar para una función o un cuerpo condicional cuando estás trabajando en código nuevo, lo cual te permite pensar a un nivel de abstracción mayor.
+x=24
+if x > 34:
+    print('vaca')
+else:
+    pass    
+# como nose que poner en else pero no quiero que se rompa el codigo pongo pass, que no hace nada pero permite que se ejecute correctamente
+# es un recordatorio de que tengo que poner codigo en donde dice pass

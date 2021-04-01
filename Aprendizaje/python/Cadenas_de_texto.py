@@ -51,3 +51,15 @@ nombre = "Pepe"
 edad = 25
 print(f"Me llamo {nombre} y tengo {edad} años.")
 #>>> Me llamo Pepe y tengo 25 años.
+#-----------------------
+# FUNCION END="-"
+#-----------------------
+# la funcion en lo que hace es evitar que se realice un salto cuando se imprima una cadena diferente, y le agrega un simbolo entre las cadenas para diferenciarlas, PUEDE SER CUALQUIER CARACTER(2,#,A)
+print('caca ',end="%")
+print(' vaca')
+# >>> caca % vaca
+# si no ponemos end="-" se realiza el salto
+print('caca')
+print('vaca')
+# >>> caca
+# >>> vaca
