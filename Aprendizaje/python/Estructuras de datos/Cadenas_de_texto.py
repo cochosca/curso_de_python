@@ -80,7 +80,7 @@ edad = 25
 print(f"Me llamo {nombre} y tengo {edad} años.")
 #>>> Me llamo Pepe y tengo 25 años.
 #-----------------------
-# FUNCION END="-"
+# FUNCION END="-", SEP="-"
 #-----------------------
 # la funcion en lo que hace es evitar que se realice un salto cuando se imprima una cadena diferente, y le agrega un simbolo entre las cadenas para diferenciarlas, PUEDE SER CUALQUIER CARACTER(2,#,A)
 print('caca ',end="%")
@@ -91,3 +91,6 @@ print('caca')
 print('vaca')
 # >>> caca
 # >>> vaca
+# La funcion sep lo que hace es que determina que dato va a estar entre dos cadenas de catactesres cuando se imprimen juntas
+print("hola",'como estas',sep="-")
+# >>> hola-como estas
