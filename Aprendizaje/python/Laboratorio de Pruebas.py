@@ -1,7 +1,6 @@
-tupla=(13,1,8,3,2,5,8)
 lista=[]
-for numero_lista in tupla:
-    if numero_lista > 4:
-        continue
-    lista.append(numero_lista)
+for i in [1,2,3,4,5]:
+    for x in ["vaca"]:
+        if i != x:
+            lista.append((i,x))
 print(lista)

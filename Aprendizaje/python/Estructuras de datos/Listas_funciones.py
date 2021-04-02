@@ -1,4 +1,8 @@
 # estructuras de datos: https://docs.python.org/es/3/tutorial/datastructures.html#using-lists-as-stacks
+#---------------
+# LISTAS POR COMPRESION
+#--------------
+#AGREGAR
 #-------------
 # APPEND (list.append())
 #-------------

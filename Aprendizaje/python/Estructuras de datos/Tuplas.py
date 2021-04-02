@@ -1,8 +1,8 @@
 #-------------
 # TUPLAS
 #-------------
-# LAS TUPLAS SON INMUTABLES
-# Son como las listas pero no se puede modificar una ves declarada y se encierra entre parentesis o tambien se puede ponder sin parentesis
+# LAS TUPLAS SON INMUTABLES 
+# Son como las listas pero no se puede modificar una ves declarada y se encierra entre PARENTESIS o tambien se puede ponder sin parentesis PERO SEPARADOS POR COMAS
 tupla=(1,2,3,4)
 tupla2= 1,2,3,4,5
 # Con las tuplas se puede hacer todo lo que se pueda hacer con una lista menos las funciones que modifican esa lista
