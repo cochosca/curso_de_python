@@ -38,6 +38,9 @@ x%=3    # x = x % 3 # El resultado es el resto de la divicion entre x y 3
 3 != 6  # 3 es diferente que 6
 3 is 3  # igualdad a nivel de identidad (Son el mismo objeto), Se usa is para comparar objetos. Se usa cuando se desea saber si dos variables se refieren literalmente al mismo objeto.
 3 is not 4 #desigualdad a nivel de identidad (no son el mismo objeto)
+vaca=[1,2,3]
+3 in vaca # 3 esta en la lista vaca, se utiliza para comprobar que un elemento esta o no detnro de una lista, ES MAYORMENTE UTILIZADO EN FOR PERO SE PUEDE USAR EN IF
+4 not in vaca # 4 no esta en la lista vaca
 #---------------
 #OPERADORES BOOLEANOS O DE LOGICA
 #---------------

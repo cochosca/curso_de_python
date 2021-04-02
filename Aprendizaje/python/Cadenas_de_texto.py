@@ -1,3 +1,31 @@
+# LAS CADENAS DE TEXTO DE PYTHON SON INMUTABLES, ES DECIR, NO SE PUEDEN MODIFICAR SU CONTENIDO
+#------------
+# INDEXACION
+#-----------
+# indexar es obtener un indice numerico, en python se cuenta desde 0
+# es decir, cada letra de la cadena tiene asignado un indice numerico para que se pueda acceder al ella, esta misma funcion sirve para las listas
+# P Y T H O N
+# 0 1 2 3 4 5
+# Estos con los indices positivos, tambien se pueden usar indices negativos
+#   P   Y   T   H   O   N
+#  -6  -5  -4  -3  -2  -1
+# con los indices negativos se empieza a contar desde el -1, se puede llamar navegacion inversa, te permite navegar por los ultimos indices mas rapidamente
+# Para poder indexar en una cadena se tiene que poder el indice entre corchetes
+py="python"
+print(py[0])
+# >>> p
+#tambien se puede pedir un rango
+print(py[0:3])
+# >>> pyth
+# hay otras formas de mostrar el rango, si quiero indexar desde el primer indice hasta un determinado indice se pone asi
+print(py[:3])
+# >>> pyth
+# si quiero indexar desde un indice determnado hasta el final se pone asi
+print(py[3:])
+# >>> hon
+# si quiero indexar todos los indices
+print(py[:])
+# >>> python
 #----------
 #CARACTELES ESPECIALES
 #----------
