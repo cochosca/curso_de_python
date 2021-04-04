@@ -1,6 +1,6 @@
-#----------------
+#-------##---------##
 # WHILE
-#---------------
+#-------##---------##
 # El bucle while ejecuta un CODIGO cuando la condicion establecida sea verdadera
 #IMPORTANTE: cualquier valor entero que no sea cero es verdadero; CERO ES FALSO
 x = 20
@@ -21,9 +21,9 @@ while z < 11:
     z+=1    
 else:
     print('termino el ciclo')
-#---------------------
+#----------##-----------##
 # CICLO FOR
-#---------------------
+#----------##-----------##
 # ciclo for realiza una iteracion (Iteración significa repetir varias veces un proceso con la intención de alcanzar una meta deseada, objetivo o resultado)
 # ITERA sobre los ítems de CUALQUIER SECUENCIA (lista, cadena de texto, rango)en el orden que aparecen en la secuencia, en donde, a cada itearcion se SE EJECUTA UN CODIGO.
 words = ['cat', 'window', 'defenestrate']
@@ -97,3 +97,65 @@ else:
     pass    
 # como nose que poner en else pero no quiero que se rompa el codigo pongo pass, que no hace nada pero permite que se ejecute correctamente
 # es un recordatorio de que tengo que poner codigo en donde dice pass
+#----------------##----
+# TECNICAS DE ITERACION
+#----------------##----
+# metodos que agregan funcionalidad a las iteraciones for
+#------------       
+# RANGE
+#------------
+# la funcion integrada range(), hace que el ciclo for ITERE sobre un una secuencia de numeros, que genera una progresion aritmetica
+for i in range(9):
+    print(i,end="-")    # la funcion end="-" sirve para eviar los saltos de linea y egregamos un simbolo a ese espacio
+#>>> 0-1-2-3-4-5-6-7-8-
+#-----------------
+# ENUMERATE
+#----------------
+#Cuando se itera sobre una secuencia, se puede obtener el índice de posición junto a su valor correspondiente usando la función enumerate()
+for i in enumerate([1,23,34,45]):
+    print(i,end=', ')
+# >>> (0, 1), (1, 23), (2, 34), (3, 45)
+# Tambien se pueden obtener el inidice y el valor por separado
+casa=[i+2 for i in range(5)]
+for i,r in enumerate(casa):
+    print(i,r,end=', ',sep=' = ')
+# >>> 0 = 2, 1 = 3, 2 = 4, 3 = 5, 4 = 6, 5 = 7, 6 = 8, 7 = 9, 8 = 10, 9 = 11
+#-------------------
+# ZIP
+#------------------
+# Se puede iterar sobre DOS LISTAS con el metodo zip()
+cama=[i+1 for i in range(9)]
+print(cama)
+pelo=['hola','holaa','chau']
+for i,v in zip(cama,pelo):
+    print(i,v,end=', ',sep='-')
+# >>> 1-hola, 2-holaa, 3-chau
+#------------------
+# REVERSED
+#-----------------
+# iterar sobre una secuencia en orden inverso se llama con reverved(iterable)
+for i in reversed(range(8)):
+    print(i,end=' - ')
+# >>> 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0
+#--------------------
+# SORTED
+#---------------------
+# Lo que hace es que cuando se itrea una secuencia ordenada(listas,tuplas,diccionaraio,rango), es decir todas las colecciones menos la set,
+# este itera de forma ORDENADA(numericamente, del negativo al positivo) Y ALFABETICAMENTE( de la A a la Z), SIN MODIFICAR EL ORDEN DEL ORIGEN 
+# ALFABETICAMENTE
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for i in sorted(basket):
+    print(i,end=' - ')
+# >>> apple - apple - banana - orange - orange - pear  
+# NUMERICAMENTE
+tupla=(0,1,-1,-2,3,2,4,3,5)
+for i in sorted(tupla):
+    print(i,end=' - ')
+# >>> -2 - -1 - 0 - 1 - 2 - 3 - 3 - 4 - 5 
+#---------------------
+# SET
+#---------------------
+# Elimina elementos duplicados en las secuencias   
+tupla=(0,1,-1,-2,3,2,4,3,5)
+for i in sorted(set(tupla)):
+    print(i,end=' - ')
