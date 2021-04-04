@@ -1,4 +1,4 @@
-# copia los numeros en la lista
+# copia los datos(numeros o cadenas) en la lista
 datos_bruto=[1,2,2,3,3,3,4,4,4,3,3,3,3,]
 # extrae en un set todas la varibales del estudio
 variable={dato for dato in datos_bruto}

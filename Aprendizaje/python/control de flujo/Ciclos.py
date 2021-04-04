@@ -21,6 +21,15 @@ while z < 11:
     z+=1    
 else:
     print('termino el ciclo')
+# el buche infinito while true
+i=int()
+while True:
+# estamos ante un ciclo infinito que iterará hasta el fin de los tiempos, a no ser que usemos un BREAK, RETURN
+    i+=1
+    if i == 28:
+        break
+    print('termino el bucle')
+# >>> termino el bucle
 #----------##-----------##
 # CICLO FOR
 #----------##-----------##
