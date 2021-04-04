@@ -2,7 +2,22 @@
 #---------------
 # LISTAS POR COMPRESION
 #--------------
-#AGREGAR
+# Son listas  donde cada elemento es el resultado de algunas operaciones aplicadas a cada miembro de otra secuencia o iterable, o para crear un segmento de la secuencia de esos elementos para satisfacer una condición determinada. Ejemplo
+#si yo quiero que se cree una lista de forma automatica  siguiendo una condicion, esta es la formas mas larga
+auto_lista=[]
+for i in range(3):
+    if i > 0:
+        auto_lista.append(i+ 3)
+print(auto_lista)
+# >>> [4,5]
+# pero con la lista de comrpesion es mas legible y rapido el codigo
+# lista=[ primero(operacion) segundo(iteracion) tercero(condicion, si es que hay)]
+auto_lista2=[i+3 for i in range(3) if i > 0]
+print(auto_lista2)
+# >>> [4,5]
+# los que hace es que a cada iteracion que cumple la condicion, se agrega a la lista, evitando usar .apped()
+# se pude hacer mas complejo
+
 #-------------
 # APPEND (list.append())
 #-------------

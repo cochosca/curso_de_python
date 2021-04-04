@@ -5,11 +5,14 @@
 # se pude eliminar y agregar elementos a los sets
 #  SE UTILIZAN LLAVES
 seta={1,2,3,4}
+#-----------
+# COMPROVACIONES
+#-------------
 # para revisar si un elemento esta dentro del set
 print(1 in seta)
 # >>> True
-print('caca' in seta)
-# >>> False
+print('caca' not in seta)
+# >>> True
 # un set vacio se indica con set()
 set_vacio=set()
 print(set_vacio)
