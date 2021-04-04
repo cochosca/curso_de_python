@@ -1,7 +1,7 @@
 # copia los numeros en la lista
-numeros=[]
+datos_bruto=[1,2,2,3,3,3,4,4,4,3,3,3,3,]
 # extrae en un set todas la varibales del estudio
-variable={numero for numero in numeros}
+variable={dato for dato in datos_bruto}
 # Determina la frecuencia de cada variable y la retorna
-for frecuencia_variable in variables:
-    print(frecuencia_variable,numeros.count(frecuencia_variable),sep=": ")
+for frecuencia_variable in variable:
+    print(frecuencia_variable,datos_bruto.count(frecuencia_variable),sep=": ")
