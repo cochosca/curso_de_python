@@ -23,6 +23,7 @@ else:
     print('termino el ciclo')
 # el buche infinito while true
 i=int()
+#CICLOS INFINITOS, son cilos en donde siempre es verdadero entonces nunca termina el ciclo   
 while True:
 # estamos ante un ciclo infinito que iterará hasta el fin de los tiempos, a no ser que usemos un BREAK, RETURN
     i+=1
@@ -30,13 +31,25 @@ while True:
         break
     print('termino el bucle')
 # >>> termino el bucle
+# 0 = False
+# 1 = True
+while 1:
+# estamos ante un ciclo infinito que iterará hasta el fin de los tiempos, a no ser que usemos un BREAK, RETURN
+    i+=1
+    if i == 28:
+        break
+    print('termino el bucle')
+# >>> termino el bucle
+while 0:
+    #este ciclo como es falso nunca se inicia
+    pass
 #----------##-----------##
 # CICLO FOR
 #----------##-----------##
 # ciclo for realiza una iteracion (Iteración significa repetir varias veces un proceso con la intención de alcanzar una meta deseada, objetivo o resultado)
 # ITERA sobre los ítems de CUALQUIER SECUENCIA (lista, cadena de texto, rango)en el orden que aparecen en la secuencia, en donde, a cada itearcion se SE EJECUTA UN CODIGO.
-words = ['cat', 'window', 'defenestrate']
-for w in words:
+s = ['cat', 'window', 'defenestrate']
+for w in s:
     print(w, len(w))  # Imprime el primer elemento de la lista y cantidad de elementos de la cadena de caracteres
 #>>> cat 3
 #>>> window 6
