@@ -9,7 +9,11 @@ int = 2
 int = -1
 #Numeros reales, osea que puede tener decimales
 float = 9.8
-float = -9.9
+float = -9.94
+# Si quieres determinar cuanto numeros despues de la coma se utiliza round()
+b = round(float,1)
+print(b)
+# >>> -9.9
 #valor absoluto = abs()
 print(abs(-15))
 #Numeros complejos
