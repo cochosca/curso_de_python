@@ -2,8 +2,8 @@
 # ATRIBUTOS  Y METODOS PRIVADO DE PYTHON
 #-----------#----------------##
 # --Explicacion detallada: https://www.genbeta.com/desarrollo/cazadores-de-mitos-las-propiedades-privadas-en-python--
-# Las variables «privadas» de instancia, que no pueden accederse excepto desde dentro de un objeto, no existen en Python
-# Existen dos tipo,  publicos(que pueden ser consultados fuera de la clase) y privados (en donde no se puede modificar de forma externa de la clase)
+# En python realmente no existe metodos privados, lo que realmente exiten son formas de inidicar que ciertos atributos no deberias se accedidos fuera de la clase.
+# TODAS LOS ATRIBUTOS SON PUBLICOS EN PYTHON
 # --ATRIBUTO PUBLICO--
 class Comida:
     def __init__(self,platillo):
@@ -12,21 +12,38 @@ class Comida:
         return self.platillo
 sopa = Comida('sopa paraguaya')
 # este objeto se le puede obtener sus atributos
-print(sopa.retorna())
+print(sopa.platillo)
 # >>> sopa paraguaya
-# --ATRIBUTO PRIVADO--
+# yo puedo modificar la variable de forma extena
+sopa.platillo = 'sopa de chancho'
+print(sopa.platillo)
+# >>> sopa de chancho
+# --ATRIBUTO PRIVADO-- 
+# YO ESTOY INICANDO DE QUE NO SE DEVERIA ACCEDER DESDE AFUERA A OTRA PERSONA QUE ESTE LEYENDO ESTE CODIGO O A MI MISMO EN UN FUTURO
 class Prueba:
     def __init__(self,p):
         self._p = p
-    def vuelta(self):
-        return self.p
-prueba = Prueba('caca')
-print(prueba.vuelta())
-# >>> AttributeError: 'Prueba' object has no attribute 'p'
-# Esto indica que no se puede acceder a ese atributo de forma externa, la unica forma es dento de la clase con la funcion get y set
-class Prueba:
-    def __init__(self,p):
-        self._p = p
-    def get_p(self):
-        return self._p
-prueba = Prueba('caca')
+# Con el guion bajo al comienzo se indica que este atributo es privado
+popo = Prueba('caca')
+print(popo._p)
+# >>> caca
+# yo puedo modificar igualmente pero NO DEBERIA porque lo indique anteriomente
+popo._p = 'pipi'
+print(popo._p)
+# >>> pipi
+#-------------------
+# DOBLE GUION
+#-------------------
+# Son utilizados para renombrar ese atributo o metodo para que no coliciones con una subclase, es decir, di yo defini un atributo en una clase padre con doble guion este le cambia el nombre a : _Nombre_clase__nombre_atributo
+class Padre:
+    def __init__(self,caca,vaca = 34):
+        self.__caca = caca
+        self.vaca = vaca
+ejemplo = Padre('hola','vaca')
+print(dir(ejemplo))
+# >>> ['_Padre__caca', ...] # El atributo se renombro
+
+class Hijo(Padre):
+    def __init__(self,caca, vaca):
+        self.__caca = caca
+        self.vaca

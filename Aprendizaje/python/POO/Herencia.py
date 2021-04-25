@@ -35,6 +35,29 @@ class Pedrito(Pedro):
         self.gato = gato
     def __str__(self):
         return f'la variable es: {self.sapo}'
-pato = tercero('pato', 15, 'sapo', 'gato')
+pato = Pedrito('c', 'hola', 'chau')
 print(pato)
-# >>> la variable es: sapo
+# >>> la variable es: hola
+#------------------
+# HERENCIA MULTIPLE
+#------------------
+# Consiste en que una subclase puede heredear de muchas clases principales
+class Padre:
+    def __init__(self,nombre,apellido):
+        self.nombre = nombre
+        self.apellido = apellido
+    def __str__(self):
+        return f'Clase padre, su nombre es {self.nombre} y su apellido es {self.apellido}'
+print(Padre('jose','bentiez'))
+class Madre:
+    def __init__(self,altura,peso):
+        self.altura = altura
+        self.peso = peso
+
+# Clase que hereda de padre y madre
+class Hijo(Padre,Madre):
+    def __init__(self,nombre,apellido,altura,peso,oficio):
+       # se llama el nombre de la clase y su atributo __init__(parametros a traer)
+        Padre.__init__(self,nombre,apellido) 
+        Madre.__init__(self,altura,peso)
+        self.oficio = oficio
