@@ -1,5 +1,5 @@
 # copia los datos(numeros o cadenas) en la lista
-datos_bruto=[58,63,638,45,45,49,50,51,55,56,56,56,56,3,63]
+datos_bruto=[4, 9, 85, 72, 95, 80, 24, 4, 85, 90]
 
 # extrae en un set todas la varibales del estudio
 variable={dato for dato in datos_bruto}
@@ -36,3 +36,4 @@ tabla_frec = []
 for i,z,x,c,v,b in zip(variable,frec_variable,frec_acum,frec_rela,frec_rela_acum,porcentaje):
   tabla_frec.append([i,z,x,c,v,b])
 
+print(frec_rela_acum)

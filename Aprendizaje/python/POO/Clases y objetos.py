@@ -27,13 +27,15 @@ prius = Auto('toyota','sedan', 'prius')
 # ATRIBUTOS
 #-----------------
 # Son las características que puede tener un objeto, como el color, forma, altura. etc
-# Existen las VARIABLE DE CLASE, que son atributos que comparten todos los objetos de la clase
+# Existen las VARIABLE DE CLASE, que son atributos de la clase y que el obejto cuando es creado absorve esos atributos
+# Estos se definen fuera de los metodos de clase
 class Pelota:
     ''' las caracteristicas '''
     shape = 'round'
     color = 'red'
     size = '30 cm'
-# Y  las VARIABLES DE INSTANCIA(crear un objeto a partir de una clase), que son atributos que tiene cada objeto de la clase
+# Y  las VARIABLES DE INSTANCIA(crear un objeto a partir de una clase), que son atributos que tiene cada objeto de la clase y SOLO PUEDER SER ACCEDIDAS CUANDO CREAMOS EL OBJETO, a diferencia de las de clase que puede acceder a ellas ya que son atributos de la clase
+# Estos se definen dentro de un metodo
 class Zapato:
     def __init__(self,marca,talle,tipo):
         self.mr = marca
@@ -105,3 +107,11 @@ class Auto:
 tesla = Auto('tesla', 'sedan', 'x',1,2,3,3,4,5,5,6,p=23,x=34,c=45,cd=23)# para el diccionario la clave es como una variable y el valor despues clave=valor, no clave:valor
 print(tesla.info())
 # >>> ('tesla', 'sedan', 'x', (1, 2, 3, 3, 4, 5, 5, 6), {'p': 23, 'x': 34, 'c': 45, 'cd': 23})
+#---------------------
+# METODOS ESTATICOS
+#---------------------
+# Son metodos de clase que no necesitan el paragemtro self ya que estos no estan relacionados con los objetos sino con la clase en si.
+class MetodoEstatico:
+    @staticmethod
+    def metodo():
+        print('mamahuebo')
