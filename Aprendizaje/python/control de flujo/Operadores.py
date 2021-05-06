@@ -14,6 +14,15 @@ b=3**4  #potenciacion 3 con 4 de exponente
 n=sqrt(25)  #Raiz al cuadrado, el resultado es decimal siempre
 #para que funcione la funcion sqrt tenemos que importar de libreria math
 from math import sqrt
+#-------------------
+# OPERADORES UNARIOS
+#-------------------
+# Estos operadores modifican a un solo operando
+a = -1 # hacer que el valor sea negativo
+b = +1 # determinar que el valor es positivo
+b = ~b # esto invierte el simbolo
+print(b)
+# >>> -1
 #-------------
 # OPERADORES DE ASIGNACION
 #-------------

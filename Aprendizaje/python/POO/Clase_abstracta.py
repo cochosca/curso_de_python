@@ -1,7 +1,7 @@
 # Primero tenemos que entender que es una intefaz de programacion, en la forma en la cual los objetos se comunican entre si
-#----------------##
+#-----------------##
 # CLASE ABSTRACTA
-#----------------##
+#-----------------##
 # Es una clase que define metodos y atributos que no estan implementados(que se definieron pero no se les agrego funcionalidad), a partir de esta clase no se pueden crear instancias, por lo que es obligatorio crear subclases, que a su vez crean sus propias implementaciones a los metodos abtactos de la clase abstracta, para evitar la dupliacion de codigo.
 
 # Para poder crear una clase abstracta hay que importar el modulo abc y el decorador abstractmethod

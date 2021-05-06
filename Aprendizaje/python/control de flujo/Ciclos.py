@@ -162,8 +162,7 @@ for i in reversed(range(8)):
 #--------------------
 # SORTED
 #---------------------
-# Lo que hace es que cuando se itrea una secuencia ordenada(listas,tuplas,diccionaraio,rango), es decir todas las colecciones menos la set,
-# este itera de forma ORDENADA(numericamente, del negativo al positivo) Y ALFABETICAMENTE( de la A a la Z), SIN MODIFICAR EL ORDEN DEL ORIGEN 
+# Lo que hace es que cuando se itrea una secuencia ordenada(listas,tuplas,diccionaraio,rango), es decir todas las colecciones menos la set, este itera de forma ORDENADA(numericamente, del negativo al positivo) Y ALFABETICAMENTE( de la A a la Z), SIN MODIFICAR EL ORDEN DEL ORIGEN 
 # ALFABETICAMENTE
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 for i in sorted(basket):

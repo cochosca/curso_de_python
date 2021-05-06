@@ -103,3 +103,15 @@ del lista[:2]
 # >>> [] # elimino todos los elementos 
 # tambien se pude usar para eleminar varibles
 del lista
+#-----------------------------
+# LISTA.SORT() Y SORTED(LISTA)
+#-----------------------------
+# Estas funciones ordenan las listas de menor a mayor
+# Sorted() ordena de menor a mayor sin modificar la lista original
+lista = [ 1,8,6,7,5,9,3,4,5,8,7]
+print(sorted(lista))
+# >>> [1, 3, 4, 5, 5, 6, 7, 7, 8, 8, 9]
+ # lista.sort() orden a de menor a mayor pero modifica la listas
+lista.sort()
+print(lista)
+# >>> [1, 3, 4, 5, 5, 6, 7, 7, 8, 8, 9]
