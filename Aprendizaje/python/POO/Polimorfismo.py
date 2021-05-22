@@ -13,7 +13,7 @@ class Padre:
 
 class Hijo(Padre):
     def __init__(sefl, nombre):
-        super().__init__(noombre)
+        super().__init__(nombre)
     
     # sobrecarga del metodo, es decir, sobreescribir
     def hablar(self):

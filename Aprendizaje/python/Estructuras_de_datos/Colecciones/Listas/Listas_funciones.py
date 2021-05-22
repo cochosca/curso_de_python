@@ -115,3 +115,11 @@ print(sorted(lista))
 lista.sort()
 print(lista)
 # >>> [1, 3, 4, 5, 5, 6, 7, 7, 8, 8, 9]
+
+#---------------------
+# INDEX
+#---------------------
+# Devuelve el indice de una lista de un determinado valor
+listax = [1,2,3,4,5]
+print(listax.index(4))
+# >>> 3
