@@ -43,6 +43,9 @@ print("Una línea\nOtra línea")
 #tabulador: \t
 print("1\t2\t3")
 #>>> 1  2   3
+# cuando un return es muy largo, se puede dividid con \ para seguir escribiendo el la siguiente linea
+return "hola roberto"\
+       "Soy tu amigo"
 #-----------------
 #COMILLAS TRIPLES
 #----------------
